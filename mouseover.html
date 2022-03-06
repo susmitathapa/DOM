@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WLiTDay3</title>
+</head>
+<body>
+    <script>
+        const heading = document.createElement('h1')
+        heading.innerHTML ="Students' Information"
+        document.body.appendChild(heading)
+        const showInfo = function(){
+            const name = document.getElementById('name').value
+            const collegeName =document.getElementById('collegeName').value
+            const address =document.getElementById('address').value
+            const phoneNumber =document.getElementById('phoneNumber').value
+            const emailAddress =document.getElementById('emailAddress').value
+            const output1 = document.createElement('h2')
+            const output2 = document.createElement('h2')
+            const output = document.createElement('h2')
+            const submit = document.getElementById('submit').style.color ="green"
+        }
+        const showInfo1 = function(){
+            const submit1 = document.getElementById('submit1').style.color ="red"
+            const output3 = document.createElement('h2')
+        }
+    </script>
+    <input id="name" placeholder="enter your name"/><br>
+    <input id="collegeName" placeholder="enter your college name"/><br>
+    <input id="address" placeholder="enter your address"/><br>
+    <input id="phoneNumber" placeholder="enter your Phone number"/><br>
+    <input id="emailAddress" placeholder="enter your email address"/><br>
+    <button id="submit" title="click here" onmouseover="showInfo()" >Save info</button>
+    <button id="submit1" title="don't save" onmouseover="showInfo1()" >Exit</button>
+</body>
+</html>
